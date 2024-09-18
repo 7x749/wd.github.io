@@ -1,0 +1,44 @@
+/* 显示图片容器样式 */
+.container {
+    position: relative; /* 设置容器为相对定位，使其子元素可以使用绝对定位相对于它进行定位。*/
+    display: flex;   /* 使用flex布局 */
+    flex-direction: column; /* 调整flex方向为column */
+    align-items: center; /* 水平居中 */
+    margin: 40px auto;  /* 添加外边距 */
+    width: 60% ;  /* 设置容器的宽度为父容器宽度的60% */
+}
+
+/* 图片样式 */
+#displayed-img {
+    max-width: 100%; /* 设置图片最大宽度为容器宽度，确保图片的最大宽度不超过其父容器的宽度 */
+    margin-bottom: 20px ; /* 添加底部外边距，设置图片底部的外边距为50px*/
+}
+
+/*收略图容器样式 */
+.thumb-bar {
+    display: flex; /* 使用flex布局 */
+    flex-wrap: wrap; /* 允许元素换行 */
+    align-items: center; /* 水平居中 */
+    width: 100%; /* 设置容器宽度为父容器的100% */
+    justify-content: center; /* 水平居中 */
+}
+
+/*收略图样式 */
+img.thumb {
+    width: 30% ; /* 设置图片宽度为父容器宽度的30% */
+    height:auto ; /* 保持图片的原始宽高比 */
+    cursor: pointer; /* 设置鼠标指针为手型 */
+    margin: 10px ; /* 添加外边距 */
+}
+
+/* 按钮样式 */
+button {
+    position: absolute; /* 设置按钮为绝对定位，使其相对于最近的相对定位的父元素进行定位。 */
+    top: 10px; /* 设置按钮的顶部外边距为10px */
+    left: 10px; /* 设置按钮的左侧外边距为10px */
+}
+
+/* 标题样式 */
+h1{
+    text-align: center; /* 水平居中 */
+}
